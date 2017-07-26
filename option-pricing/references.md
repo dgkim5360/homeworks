@@ -9,7 +9,7 @@ https://www.quantstart.com/articles/european-vanilla-option-pricing-with-c-via-m
 CDF of normal distribution  
 https://stackoverflow.com/questions/2328258/cumulative-normal-distribution-function-in-c-c
 
-Random number generator for standard normal distribution
+Random number generator for standard normal distribution  
 http://www.cplusplus.com/reference/random/normal_distribution/
 
 Build shared library via gcc  
