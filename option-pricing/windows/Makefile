@@ -7,7 +7,7 @@ SRCS=src/main.cpp include/pricing.h
 SRCS_DLL=src/pricing.cpp
 CXXFLAGS=-Wall -Werror -Iinclude -static-libgcc -static-libstdc++
 CXXFLAGS_DLL=-DBUILDING_PRICING -Wall -Werror -Iinclude -std=c++11
-SHAREDFLAG=-shared
+SHAREDFLAG=-shared -Wl,--add-stdcall-alias
 LDFLAGS=-Llib -lpricing
 MINGWPATH=/usr/lib/gcc/x86_64-w64-mingw32/5.3-win32
 
@@ -16,7 +16,7 @@ run: $(TARGET)
 	cp $(MINGWPATH)/libgcc_s_seh-1.dll ./
 	cp $(DLL) ./
 	wine main.exe
-	
+
 $(TARGET): $(DLL) $(OBJS)
 	$(CXX) -o $@ $(OBJS) $(LDFLAGS)
 

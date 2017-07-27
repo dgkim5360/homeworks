@@ -11,11 +11,11 @@ extern "C" {
 #define PRICING __declspec(dllimport)
 #endif
 
-__stdcall double call_price_closed_from(const double& S, const double& K, const double& r, const double& v, const double& T);
-__stdcall double put_price_closed_from(const double& S, const double& K, const double& r, const double& v, const double& T);
+double __stdcall PRICING call_price_closed_from(const double& S, const double& K, const double& r, const double& v, const double& T);
+double __stdcall PRICING put_price_closed_from(const double& S, const double& K, const double& r, const double& v, const double& T);
 
-__stdcall double call_price_mc(const long& num_sims, const double& S, const double& K, const double& r, const double& v, const double& T);
-__stdcall double put_price_mc(const long& num_sims, const double& S, const double& K, const double& r, const double& v, const double& T);
+double __stdcall PRICING call_price_mc(const long& num_sims, const double& S, const double& K, const double& r, const double& v, const double& T);
+double __stdcall PRICING put_price_mc(const long& num_sims, const double& S, const double& K, const double& r, const double& v, const double& T);
 
 #ifdef __cplusplus
 }
