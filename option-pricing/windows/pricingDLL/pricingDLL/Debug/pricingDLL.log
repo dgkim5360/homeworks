@@ -1,3 +1,5 @@
 ﻿  pricing.cpp
-  pricingDLL.vcxproj -> C:\Users\kwh\documents\visual studio 2017\Projects\pricingDLL\Debug\pricingDLL.dll
-  pricingDLL.vcxproj -> C:\Users\kwh\documents\visual studio 2017\Projects\pricingDLL\Debug\pricingDLL.pdb (Partial PDB)
+  LINK : C:\Users\kwh\dev\homeworks-d10\option-pricing\windows\pricingDLL\Debug\pricingDLL.dll을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+     C:\Users\kwh\dev\homeworks-d10\option-pricing\windows\pricingDLL\Debug\pricingDLL.lib 라이브러리 및 C:\Users\kwh\dev\homeworks-d10\option-pricing\windows\pricingDLL\Debug\pricingDLL.exp 개체를 생성하고 있습니다.
+  pricingDLL.vcxproj -> C:\Users\kwh\dev\homeworks-d10\option-pricing\windows\pricingDLL\Debug\pricingDLL.dll
+  pricingDLL.vcxproj -> C:\Users\kwh\dev\homeworks-d10\option-pricing\windows\pricingDLL\Debug\pricingDLL.pdb (Partial PDB)
