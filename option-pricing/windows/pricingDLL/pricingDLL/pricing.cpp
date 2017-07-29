@@ -30,6 +30,7 @@ double __stdcall call_price_mc(const double &S, const double &K, const double &r
 	const double S_adjust = S*exp(T*(r - 0.5*v*v));
 	double S_cur = 0.0;
 	double payoff_sum = 0.0;
+	double rnorm;
 
 	std::default_random_engine generator;
 	std::normal_distribution<double> distribution(0.0, 1.0);
@@ -41,7 +42,7 @@ double __stdcall call_price_mc(const double &S, const double &K, const double &r
 	if (num_sims <= 0) return -6;  // exception on the sixth argument num_sims
 
 	for (int i=0; i<num_sims; i++) {
-		double rnorm = distribution(generator);
+		rnorm = distribution(generator);
 		S_cur = S_adjust*exp(sqrt(v*v*T)*rnorm);
 		payoff_sum += (S_cur - K > 0.0)? (S_cur - K): 0.0;  // max(S_cur-K, 0.0)
 	}
