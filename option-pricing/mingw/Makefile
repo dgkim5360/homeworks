@@ -2,13 +2,13 @@ CXX=x86_64-w64-mingw32-g++
 TARGET=main.exe
 OBJS=obj/main.o
 OBJS_DLL=obj/pricing.o
-DLL=lib/libpricing.dll
+DLL=lib/pricing.dll
 SRCS=src/main.cpp include/pricing.h
 SRCS_DLL=src/pricing.cpp
 DEF=src/pricing.def
 CXXFLAGS=-Wall -Werror -Iinclude -static-libgcc -static-libstdc++
 CXXFLAGS_DLL=-DBUILDING_PRICING -Wall -Werror -Iinclude -std=c++11
-SHAREDFLAG=-shared -Wl,--kill-at # -Wl,--add-stdcall-alias
+SHAREDFLAG=-shared
 LDFLAGS=-Llib -lpricing
 MINGWPATH=/usr/lib/gcc/x86_64-w64-mingw32/5.3-win32
 
@@ -25,7 +25,7 @@ $(OBJS): $(SRCS)
 	$(CXX) $(CXXFLAGS) -o $@ -c $<
 
 $(DLL): $(OBJS_DLL)
-	$(CXX) $(SHAREDFLAG) -o $@ $< $(DEF)
+	$(CXX) $(SHAREDFLAG) -o $@ $< # $(DEF)
 
 $(OBJS_DLL): $(SRCS_DLL)
 	$(CXX) $(CXXFLAGS_DLL) -o $@ -c $<
