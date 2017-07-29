@@ -6,4 +6,4 @@
 
 old
 
-!option-pricing/windows-native/**/*.dll
+!option-pricing/windows/**/*.dll
