@@ -1,0 +1,32 @@
+EXPORTS
+    _Z12put_price_mclddddd@44 @1
+    _Z13call_price_mclddddd@44 @2
+    _Z21put_price_closed_fromddddd@40 @3
+    _Z22call_price_closed_fromddddd@40 @4
+    _Z3d_jiddddd @5
+    _Z8norm_cdfd @6
+    _ZNKSt19normal_distributionIdE10param_type4meanEv @7
+    _ZNKSt19normal_distributionIdE10param_type6stddevEv @8
+    _ZNSt19normal_distributionIdE10param_typeC1Edd @9
+    _ZNSt19normal_distributionIdEC1Edd @10
+    _ZNSt19normal_distributionIdEclISt26linear_congruential_engineIjLj16807ELj0ELj2147483647EEEEdRT_ @11
+    _ZNSt19normal_distributionIdEclISt26linear_congruential_engineIjLj16807ELj0ELj2147483647EEEEdRT_RKNS0_10param_typeE @12
+    _ZNSt26linear_congruential_engineIjLj16807ELj0ELj2147483647EE3maxEv @13
+    _ZNSt26linear_congruential_engineIjLj16807ELj0ELj2147483647EE3minEv @14
+    _ZNSt26linear_congruential_engineIjLj16807ELj0ELj2147483647EE4seedEj @15
+    _ZNSt26linear_congruential_engineIjLj16807ELj0ELj2147483647EEC1Ej @16
+    _ZNSt26linear_congruential_engineIjLj16807ELj0ELj2147483647EEclEv @17
+    _ZNSt8__detail4_ModIjLj2147483647ELj16807ELj0ELb0ELb1EE6__calcEj @18
+    _ZNSt8__detail4_ModIjLj2147483647ELj1ELj0ELb1ELb1EE6__calcEj @19
+    _ZNSt8__detail5__modIjLj2147483647ELj16807ELj0EEET_S1_ @20
+    _ZNSt8__detail5__modIjLj2147483647ELj1ELj0EEET_S1_ @21
+    _ZNSt8__detail8_AdaptorISt26linear_congruential_engineIjLj16807ELj0ELj2147483647EEdEC1ERS2_ @22
+    _ZNSt8__detail8_AdaptorISt26linear_congruential_engineIjLj16807ELj0ELj2147483647EEdEclEv @23
+    _ZSt18generate_canonicalIdLj53ESt26linear_congruential_engineIjLj16807ELj0ELj2147483647EEET_RT1_ @24
+    _ZSt3loge @25
+    _ZSt3maxIjERKT_S2_S2_ @26
+    _ZSt3minIjERKT_S2_S2_ @27
+		put_price_mc = _Z12put_price_mclddddd@44
+    call_price_mc = _Z13call_price_mclddddd@44
+    put_price_closed_from = _Z21put_price_closed_fromddddd@40
+    call_price_closed_from = _Z22call_price_closed_fromddddd@40

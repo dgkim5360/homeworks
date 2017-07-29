@@ -1,0 +1,7 @@
+g++ -DBUILDING_PRICING -Wall -Werror -Iinclude -std=c++11 -o obj/pricing.o -c src/pricing.cpp
+
+g++ -shared -o lib/pricing.dll obj/pricing.o
+
+g++ -Wall -Werror -Iinclude -o obj/main.o -c src/main.cpp
+
+g++ -o main.exe main.o -Llib -lpricing
