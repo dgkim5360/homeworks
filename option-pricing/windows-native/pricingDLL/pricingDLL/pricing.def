@@ -1,0 +1,4 @@
+LIBRARY "pricingDLL"
+EXPORTS
+callclosedform = call_price_closed_from
+callmc = call_price_mc
