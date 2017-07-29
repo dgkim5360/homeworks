@@ -4,4 +4,6 @@
 *.a
 *.exe
 
+old
+
 !option-pricing/windows-native/**/*.dll
